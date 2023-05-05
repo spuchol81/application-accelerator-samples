@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: react
+  name: react-frontend
   description: React Single Page Application with client side rendered web UI. Application provides Service to interact with backend API's.
   tags:
     - react
@@ -9,8 +9,8 @@ metadata:
     - tanzu
     - typescript
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=react'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=react-frontend'
 spec:
-  type: website
+  type: service
   lifecycle: experimental
   owner: default-team
